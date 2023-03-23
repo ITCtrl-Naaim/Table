@@ -63,7 +63,7 @@ table thead th {
   color: #fff;
   font-size: 20px;
   padding: 15px 30px;
-  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
 }
 
 table tr {
@@ -115,5 +115,51 @@ table td:nth-of-type(1) {
 table tr:nth-of-type(odd) td:nth-of-type(1) {
   padding: 30px 50px;
   color: #000;
+}
+
+@media (max-width: 1468px) {
+  table th {
+    display: none;
+  }
+  table, table tbody, table tr, table td {
+    display: block;
+  }
+  table tr {
+    margin-bottom: 50px;
+  }
+  table tr:nth-of-type(even) {
+    display: none;
+  }
+  table tr td:first-of-type {
+    border: 1px solid #ddd;
+  }
+  table tr td {
+    text-align: end;
+    padding: 20px;
+    position: relative;
+  }
+  table tr td:not(:first-child, .sobhi, .mohamad, .omar-h, .omar-k, .ahmad-k, .ahmad-m) {
+    display: none;
+  }
+  table tr td::before {
+    content: attr(data-lesson);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+  table tr td::after {
+    content: attr(data-time);
+    color: #fff;
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+  }
 }
 /* End Table */
