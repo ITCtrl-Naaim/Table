@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -34,40 +37,73 @@ body {
 } */
 
 /* Start Table */
-div.contain {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
+.container {
+  padding: 0 50px;
 }
 
-h1 {
+header {
   text-align: center;
+  margin: 20px auto;
+}
+header h1 {
+  font-family: 'Markazi Text', serif;
+}
+
+header img {
+  height: 100px;
 }
 
 table {
-  margin-top: 50px;
   border-collapse: collapse;
   width: 100%;
   text-align: center;
-  /* border: 1px solid #009879; */
 }
 
 table thead th {
-  background-color: #009879;
   color: #fff;
   font-size: 20px;
   padding: 15px 30px;
   border-right: 1px solid #ddd;
 }
+
 table tr {
   border-bottom: 1px solid #ddd;
 }
-table tr:last-of-type {
-  border-bottom: 2px solid #009879;
+
+table tr:nth-of-type(odd) {
+  color: #fff;
 }
+
 table tr:nth-of-type(even) {
   background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #0F4D72;
+}
+
+table th.mohamad, td.mohamad {
+  background-color: #1980be;
+}
+
+table th.omar-k, td.omar-k {
+  background-color: #00d1ff;
+}
+
+table th.omar-h, td.omar-h {
+  background-color: #005365;
+}
+
+table th.sobhi, td.sobhi {
+  background-color: #00aab2;
+}
+
+table th.ahmad-m, td.ahmad-m {
+  background-color: #69a7a7;
+}
+
+table th.ahmad-k, td.ahmad-k {
+  background-color: #607d8b;
 }
 
 table td:nth-of-type(1) {
@@ -75,7 +111,9 @@ table td:nth-of-type(1) {
   width: 10%;
   border-left: 1px solid #ddd;
 }
+
 table tr:nth-of-type(odd) td:nth-of-type(1) {
   padding: 30px 50px;
+  color: #000;
 }
 /* End Table */
